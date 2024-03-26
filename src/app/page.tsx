@@ -2,7 +2,10 @@ import AnimatedHeader from "@/components/AnimatedHeader";
 import { Icons } from "@/components/Icons";
 import ProjectGrid from "@/components/ProjectGrid";
 import Timeline from "@/components/Timeline";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -39,6 +42,19 @@ export default function Home() {
             ultimately settled and honed my skills in web development with React
             and Javascript.
           </p>
+          <a
+            href="mailto:matthewlemuelr@gmail.com"
+            className={buttonVariants({
+              variant: "default",
+              className: "w-max px-6",
+            })}
+          >
+            Contact me
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="w-6 h-6 text-white ml-2"
+            />
+          </a>
         </div>
       </section>
 
