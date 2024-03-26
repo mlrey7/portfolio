@@ -25,7 +25,7 @@ const Footer = () => {
           </a>
         </div>
         <Separator className="bg-neutral-600" />
-        <div className="flex gap-2 mt-4">
+        <div className="flex gap-4 mt-4">
           <Link href={"https://github.com/mlrey7"}>
             <FontAwesomeIcon
               icon={faGithub}
