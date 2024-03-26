@@ -1,4 +1,5 @@
 import { Icons } from "@/components/Icons";
+import Timeline from "@/components/Timeline";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +27,7 @@ export default function Home() {
 
         <div className="max-w-prose flex flex-col gap-6 mt-16 text-slate-500">
           <p>
-            I'm a 22-year-old graduating student at University of the
+            I{"'"}m a 22-year-old graduating student at University of the
             Philippines Diliman studying Computer Science.
           </p>
           <p>
@@ -141,6 +142,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <h2 className="text-3xl font-semibold mb-10">My Experience</h2>
+        <Timeline />
       </section>
     </main>
   );
