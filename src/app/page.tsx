@@ -65,7 +65,6 @@ export default function Home() {
             <Icons.typescript className="w-12 h-12" />
             <h6 className="font-bold">Typescript</h6>
           </div>
-
           <div className="flex gap-2 items-center">
             <Icons.firebase className="w-12 h-12" />
             <h6 className="font-bold">Firebase</h6>
