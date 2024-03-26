@@ -1,4 +1,5 @@
 import { Icons } from "@/components/Icons";
+import ProjectGrid from "@/components/ProjectGrid";
 import Timeline from "@/components/Timeline";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -85,63 +86,7 @@ export default function Home() {
       </section>
       <section>
         <h2 className="text-3xl font-semibold">My Projects</h2>
-        <div className="grid grid-cols-2 mt-10 gap-16">
-          <div className="flex flex-col">
-            <Image
-              src={"/breadit.png"}
-              width={1000}
-              height={1000}
-              alt="breadit"
-              className="h-auto w-full object-cover rounded"
-            />
-            <div className="mt-6 flex flex-col gap-4">
-              <h2 className="text-2xl font-semibold">Breadit</h2>
-              <p className="w-3/4 text-slate-500">
-                A Reddit clone built with Next.js, Prisma and Redis. Implements
-                a subset of Reddit{"'"}s features: joining and leaving
-                subreddits, posts, upvotes and downvotes.
-              </p>
-              <div>
-                <Link
-                  href={"/projects/breadit"}
-                  className={cn(
-                    "font-semibold tracking-tight hover:bg-accent hover:text-accent-foreground"
-                  )}
-                >
-                  VIEW PROJECT {">"}
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <Image
-              src={"/breadit.png"}
-              width={1000}
-              height={1000}
-              alt="breadit"
-              className="h-auto w-full object-cover rounded"
-            />
-            <div className="mt-6 flex flex-col gap-4">
-              <h2 className="text-2xl font-semibold">Zapper</h2>
-              <p className="w-3/4 text-slate-500">
-                A Twitter clone built with Next.js, Prisma and Redis. Implements
-                a subset of Twitter{"'"}s features: following and unfollowing
-                users, posting, replying, retweeting and more.
-              </p>
-              <div>
-                <Link
-                  href={"/projects/breadit"}
-                  className={cn(
-                    "font-semibold tracking-tight hover:bg-accent hover:text-accent-foreground"
-                  )}
-                >
-                  VIEW PROJECT {">"}
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectGrid />
       </section>
       <section>
         <h2 className="text-3xl font-semibold mb-10">My Experience</h2>
