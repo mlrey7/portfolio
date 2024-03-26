@@ -7,7 +7,7 @@ const AnimatedHeader = () => {
 
   useEffect(() => {
     const typed = new Typed(ref.current, {
-      strings: ["Web Developer", "Front End Engineer"],
+      strings: ["Web Developer", "Full-Stack Engineer", "Front End Engineer"],
       typeSpeed: 50,
       backSpeed: 50,
     });

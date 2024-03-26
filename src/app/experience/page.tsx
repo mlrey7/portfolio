@@ -1,8 +1,40 @@
+import { Badge } from "@/components/ui/badge";
+import { experiences } from "@/data/experiences";
+
 const Page = () => {
   return (
-    <main className="flex min-h-screen container flex-col py-24 md:px-36 gap-24 items-center justify-center">
-      <section className="h-full w-full flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Work In Progress...</h1>
+    <main className="flex min-h-screen container flex-col py-24 md:pt-36 lg:px-64 gap-24">
+      <section>
+        <h1 className="text-5xl font-semibold mb-10">Experience</h1>
+        <div className="flex flex-col gap-16">
+          {...experiences.map((exp) => (
+            <div key={exp.jobTitle} className="flex flex-col w-full gap-8">
+              <div className="flex justify-between">
+                <div>
+                  <h2 className="text-3xl font-semibold">{exp.jobTitle}</h2>
+                  <h3 className="font-medium text-xl text-blue-500">
+                    {exp.company}
+                  </h3>
+                </div>
+                <time className="inline-flex items-center justify-center text-xs font-semibold uppercase w-40 h-6 text-slate-500 rounded-full">
+                  {exp.dateRange}
+                </time>
+              </div>
+              <p className="text-slate-500 max-w-prose">{exp.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {...exp.tags.map((tag) => (
+                  <Badge
+                    key={tag}
+                    variant={"outline"}
+                    className="border-blue-500 rounded-sm"
+                  >
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

@@ -1,18 +1,11 @@
-import React from "react";
-
-export interface TimelineContentData {
-  company: string;
-  dateRange: string;
-  jobTitle: string;
-  description: string;
-}
+import { ExperienceType } from "@/data/experiences";
 
 const TimelineContent = ({
   company,
   dateRange,
   jobTitle,
   description,
-}: TimelineContentData) => {
+}: ExperienceType) => {
   return (
     <div className="relative pl-8 sm:pl-48 py-6 group">
       <h3 className="font-medium text-lg text-blue-500 mb-1 sm:mb-0">
