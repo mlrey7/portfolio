@@ -1,3 +1,4 @@
+import AnimatedHeader from "@/components/AnimatedHeader";
 import { Icons } from "@/components/Icons";
 import ProjectGrid from "@/components/ProjectGrid";
 import Timeline from "@/components/Timeline";
@@ -13,7 +14,7 @@ export default function Home() {
           <h1 className="text-3xl lg:text-5xl font-semibold leading-tight tracking-tight">
             Hello there, I{"'"}m Matthew Lemuel Rey.{" "}
             <br className="hidden lg:block" />
-            Aspiring Front End <span className="text-blue-500">Engineer</span>,
+            Aspiring <AnimatedHeader />,
             <br className="hidden lg:block" />
             and Graduating Student.
           </h1>
