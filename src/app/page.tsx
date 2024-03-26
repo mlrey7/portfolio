@@ -8,14 +8,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-24 md:px-96 md:pt-48 gap-24">
+    <main className="flex min-h-screen flex-col p-24 lg:px-48 lg:pt-24 2xl:px-96 2xl:pt-48 gap-24">
       <section>
         <div className="flex w-full justify-between">
-          <h1 className="text-3xl lg:text-5xl font-semibold leading-tight tracking-tight">
-            Hello there, I{"'"}m Matthew Lemuel Rey.{" "}
-            <br className="hidden lg:block" />
+          <h1 className="text-4xl 2xl:text-5xl font-semibold leading-tight tracking-tight">
+            Hello there, I{"'"}m Matthew Lemuel Rey. <br />
             Aspiring <AnimatedHeader />,
-            <br className="hidden lg:block" />
+            <br />
             and Graduating Student.
           </h1>
           <Image
@@ -23,7 +22,7 @@ export default function Home() {
             alt="matthew rey picture"
             width={160}
             height={160}
-            className="h-40 w-40 rounded-full border-4 border-blue-500"
+            className="h-32 w-32 xl:h-40 xl:w-40 rounded-full border-4 border-blue-500 ml-4"
           />
         </div>
 
@@ -45,7 +44,7 @@ export default function Home() {
 
       <section className="flex flex-col gap-4">
         <h2 className="text-3xl font-semibold">My Skills</h2>
-        <div className="flex flex-wrap max-w-3xl gap-8 mt-4">
+        <div className="flex flex-wrap max-w-4xl gap-8 mt-4">
           <div className="flex gap-2 items-center">
             <Icons.react className="w-12 h-12" />
             <h6 className="font-bold">React</h6>
