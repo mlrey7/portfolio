@@ -20,7 +20,7 @@ const projects = [
 
 const ProjectGrid = () => {
   return (
-    <div className="grid grid-cols-2 mt-10 gap-16">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 mt-10 gap-16">
       {...projects.map((data) => <ProjectContent key={data.title} {...data} />)}
     </div>
   );
