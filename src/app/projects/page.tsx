@@ -7,7 +7,7 @@ const Page = () => {
     <main className="flex min-h-screen container flex-col py-24 md:pt-36 lg:px-64 gap-24">
       <section>
         <h1 className="text-5xl font-semibold mb-10">Projects</h1>
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-16">
           {...projects.map((project) => (
             <div key={project.title} className="flex flex-col gap-4">
               <Link className="relative" href={project.link}>
