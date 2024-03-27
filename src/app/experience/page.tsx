@@ -16,7 +16,7 @@ const Page = () => {
                     {exp.company}
                   </h3>
                 </div>
-                <time className="inline-flex items-center justify-center text-xs font-semibold uppercase w-40 h-6 text-slate-500 rounded-full">
+                <time className="inline-flex items-center justify-center text-xs font-semibold uppercase w-44 h-6 text-emerald-600 bg-emerald-100 rounded-full">
                   {exp.dateRange}
                 </time>
               </div>
