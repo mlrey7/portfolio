@@ -14,7 +14,7 @@ export const projects: Array<ProjectsType> = [
     link: "/projects/breadit",
   },
   {
-    imageSrc: "/breadit.png",
+    imageSrc: "/zapper.png",
     title: "Zapper",
     description:
       "A Twitter clone built with Next.js, Prisma and Redis. Implements a subset of Twitter's features: following and unfollowing users, posting, replying, retweeting and more.",
