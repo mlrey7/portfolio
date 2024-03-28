@@ -4,10 +4,11 @@ import ProjectGrid from "@/components/ProjectGrid";
 import Timeline from "@/components/Timeline";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -55,6 +56,28 @@ export default function Home() {
               className="w-6 h-6 text-white ml-2"
             />
           </a>
+          <div className="flex gap-4">
+            <Link href={"https://github.com/mlrey7"}>
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="w-6 h-6 text-black hover:text-blue-500"
+              />
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/in/matthew-lemuel-rey-714714276/"}
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="w-6 h-6 text-black hover:text-blue-500"
+              />
+            </Link>
+            <a href="mailto:matthewlemuelr@gmail.com">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="w-6 h-6 text-black hover:text-blue-500"
+              />
+            </a>
+          </div>
         </div>
       </section>
 
