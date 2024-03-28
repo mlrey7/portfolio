@@ -12,7 +12,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen container flex-col py-24 md:pt-48 md:px-36 gap-24">
+    <main className="flex min-h-screen container flex-col py-24 md:pt-48 md:px-36 gap-12 sm:gap-24">
       <section>
         <div className="flex w-full justify-between">
           <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
@@ -123,11 +123,11 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2 className="text-3xl font-semibold">My Projects</h2>
+        <h2 className="text-3xl font-semibold mb-4 sm:mb-10">My Projects</h2>
         <ProjectGrid />
       </section>
       <section>
-        <h2 className="text-3xl font-semibold mb-10">My Experience</h2>
+        <h2 className="text-3xl font-semibold mb-4 sm:mb-10">My Experience</h2>
         <Timeline />
       </section>
     </main>

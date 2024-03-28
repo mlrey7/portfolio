@@ -25,8 +25,8 @@ const Page = () => {
     <main className="flex min-h-screen container flex-col py-24 md:pt-36 lg:px-64 gap-24">
       <section className="flex flex-col gap-10">
         <div className="flex justify-between">
-          <h1 className="text-5xl font-semibold">Zapper</h1>
-          <div className="flex gap-4">
+          <h1 className="text-4xl md:text-5xl font-semibold">Zapper</h1>
+          <div className="flex gap-4 ml-4">
             <Link
               href={"https://github.com/mlrey7/zapper"}
               className={cn(buttonVariants({ variant: "outline" }))}

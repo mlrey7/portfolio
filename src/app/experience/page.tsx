@@ -5,14 +5,16 @@ const Page = () => {
   return (
     <main className="flex min-h-screen container flex-col py-24 md:pt-36 lg:px-64 gap-24">
       <section>
-        <h1 className="text-5xl font-semibold mb-10">Experience</h1>
+        <h1 className="text-4xl md:text-5xl font-semibold mb-10">Experience</h1>
         <div className="flex flex-col gap-16">
           {...experiences.map((exp) => (
             <div key={exp.jobTitle} className="flex flex-col w-full gap-8">
               <div className="flex justify-between">
                 <div>
-                  <h2 className="text-3xl font-semibold">{exp.jobTitle}</h2>
-                  <h3 className="font-medium text-xl text-blue-500">
+                  <h2 className="text-2xl md:text-3xl font-semibold">
+                    {exp.jobTitle}
+                  </h2>
+                  <h3 className="font-medium text-lg md:text-xl text-blue-500">
                     {exp.company}
                   </h3>
                 </div>

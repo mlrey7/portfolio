@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-neutral-800 py-4">
       <div className="flex flex-col h-full container max-w-4xl">
         <div className="flex-1 h-full flex flex-col justify-center items-center gap-8 py-24">
-          <h1 className="text-white text-4xl font-semibold">
+          <h1 className="text-white text-4xl font-semibold text-center">
             Want to know more about me?
           </h1>
           <a
