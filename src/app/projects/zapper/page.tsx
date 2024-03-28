@@ -35,7 +35,7 @@ const Page = () => {
               <FontAwesomeIcon icon={faGithub} className="w-6 h-6 ml-1" />
             </Link>
             <Link
-              href={"https://matthewrey-matthew-reys-projects.vercel.app/"}
+              href={"https://zapper-nu.vercel.app/"}
               className={cn(buttonVariants(), "items-center")}
             >
               See live
