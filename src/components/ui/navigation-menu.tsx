@@ -50,14 +50,28 @@ const NavigationMenuTrigger = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <NavigationMenuPrimitive.Trigger
     ref={ref}
-    className={cn(navigationMenuTriggerStyle(), "group", className)}
+    className={cn(
+      navigationMenuTriggerStyle(),
+      "p-0 group relative w-10 h-10 data-[state=open]:bg-blue-500",
+      className
+    )}
     {...props}
   >
     {children}{" "}
-    <ChevronDown
-      className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
-      aria-hidden="true"
-    />
+    <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <span
+        aria-hidden="true"
+        className="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out group-data-[state=open]:rotate-45 group-data-[state=closed]:-translate-y-1.5"
+      />
+      <span
+        aria-hidden="true"
+        className="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out group-data-[state=open]:opacity-0"
+      />
+      <span
+        aria-hidden="true"
+        className="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out group-data-[state=open]:-rotate-45 group-data-[state=closed]:translate-y-1.5"
+      />
+    </div>
   </NavigationMenuPrimitive.Trigger>
 ));
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;
@@ -83,7 +97,7 @@ const NavigationMenuViewport = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
   React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
 >(({ className, ...props }, ref) => (
-  <div className={cn("absolute left-0 top-full flex justify-center")}>
+  <div className={cn("absolute right-0 top-full flex justify-center")}>
     <NavigationMenuPrimitive.Viewport
       className={cn(
         "origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]",
