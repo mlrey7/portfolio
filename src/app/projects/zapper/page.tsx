@@ -15,6 +15,7 @@ const tags = [
   "Typescript",
   "Javascript",
   "Prisma",
+  "Redis",
   "React Query",
   "Zod",
   "Next Auth",

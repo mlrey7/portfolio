@@ -12,7 +12,7 @@ export const experiences: Array<ExperienceType> = [
     dateRange: "July - September 2023",
     jobTitle: "Software Engineer Intern",
     description:
-      "I worked on converting mock Figma designs into initial functional pages for an internal dashboard metrics web app using React, Vite and Mantine.",
+      "I worked on converting Figma designs into functional pages and components for an internal dashboard web app using React, Vite and Mantine.",
     tags: [
       "React",
       "Vite",
@@ -28,7 +28,7 @@ export const experiences: Array<ExperienceType> = [
     dateRange: "June - August 2022",
     jobTitle: "Web Developer Intern",
     description:
-      "Developed unit, integrated, and end to end (e2e) Typescript tests for Zayls software using Cypress.",
+      "I developed unit, integrated, and end to end (e2e) Typescript tests for Zayls software using Cypress.",
     tags: [
       "Cypress",
       "End to End Testing",

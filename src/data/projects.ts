@@ -7,17 +7,17 @@ interface ProjectsType {
 
 export const projects: Array<ProjectsType> = [
   {
+    imageSrc: "/zapper.png",
+    title: "Zapper (Current Project)",
+    description:
+      "A Twitter clone built with Next.js, Prisma and Redis. Implements a subset of Twitter's features: following and unfollowing users, posting, replying, retweeting and more.",
+    link: "/projects/zapper",
+  },
+  {
     imageSrc: "/breadit.png",
     title: "Breadit",
     description:
       "A Reddit clone built with Next.js, Prisma and Redis. Implements a subset of Reddit's features: joining and leaving subreddits, posts, upvotes and downvotes.",
     link: "/projects/breadit",
-  },
-  {
-    imageSrc: "/zapper.png",
-    title: "Zapper",
-    description:
-      "A Twitter clone built with Next.js, Prisma and Redis. Implements a subset of Twitter's features: following and unfollowing users, posting, replying, retweeting and more.",
-    link: "/projects/zapper",
   },
 ];
