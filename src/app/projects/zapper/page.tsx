@@ -27,13 +27,13 @@ const Page = () => {
     <main className="flex min-h-screen container flex-col py-24 md:pt-36 lg:px-36">
       <section className="flex flex-col gap-16">
         <div className="flex flex-col gap-8">
-          <div className="flex justify-between">
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
             <div className="flex animate-fade-in">
               <h1 className="text-4xl md:text-5xl font-semibold">Zapper</h1>
               <Zap className="w-[2.25rem] h-[2.25rem] md:w-[3rem] md:h-[3rem] ml-2 hover:animate-spin transition animate-none" />
             </div>
 
-            <div className="flex gap-4 ml-4">
+            <div className="flex gap-4 sm:ml-4">
               <Link
                 href={"https://github.com/mlrey7/zapper"}
                 className={cn(buttonVariants({ variant: "outline" }))}
@@ -119,7 +119,7 @@ const Page = () => {
               </p>
             </div>
             <div className="items-center flex md:w-1/2 justify-center">
-              <div className="flex flex-row md:flex-col gap-8 mt-4">
+              <div className="flex flex-col xs:flex-row md:flex-col gap-8 mt-4">
                 <div className="flex gap-2 items-center">
                   <Icons.react className="w-12 h-12" />
                   <h6 className="font-bold">React</h6>

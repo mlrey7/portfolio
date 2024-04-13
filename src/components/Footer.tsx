@@ -8,7 +8,7 @@ import { Separator } from "./ui/separator";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-800 py-4">
+    <footer className="bg-neutral-800 py-4 w-full">
       <div className="flex flex-col h-full container max-w-4xl">
         <div className="flex-1 h-full flex flex-col justify-center items-center gap-8 py-24">
           <h1 className="text-white text-4xl font-semibold text-center">

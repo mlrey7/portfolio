@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen container flex-col py-24 md:pt-48 md:px-36 gap-12 sm:gap-24">
       <section>
-        <div className="flex w-full justify-between">
-          <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
+        <div className="flex flex-col-reverse sm:flex-row w-full sm:justify-between items-center gap-4 sm:gap-0">
+          <h1 className="text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-center sm:text-start">
             Hello there, I{"'"}m Matthew Lemuel Rey. <br />
             Aspiring <AnimatedHeader />,
             <br />
@@ -30,7 +30,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="max-w-prose flex flex-col gap-4 mt-8 xl:mt-6 text-slate-500">
+        <div className="max-w-prose flex flex-col gap-4 mt-8 text-slate-500">
           <div>
             <p>
               I{"'"}m a 22-year-old graduating student at University of the
