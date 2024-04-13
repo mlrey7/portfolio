@@ -30,19 +30,22 @@ export default function Home() {
           />
         </div>
 
-        <div className="max-w-prose flex flex-col gap-6 mt-16 text-slate-500">
-          <p>
-            I{"'"}m a 22-year-old graduating student at University of the
-            Philippines Diliman studying Computer Science.
-          </p>
-          <p>
-            I started dabbling in coding when I was 11 in order to make games
-            with C++. However, my 11 year old mind could not comprehend pointers
-            back then. Fortunately, I sticked with programming ever since,
-            dabbled in a lot of programming languages and frameworks, but
-            ultimately settled and honed my skills in web development with React
-            and Javascript.
-          </p>
+        <div className="max-w-prose flex flex-col gap-4 mt-8 xl:mt-6 text-slate-500">
+          <div>
+            <p>
+              I{"'"}m a 22-year-old graduating student at University of the
+              Philippines Diliman studying Computer Science.
+            </p>
+            <p className="mt-2">
+              I started dabbling in coding when I was 11 in order to make games
+              with C++. However, my 11 year old mind could not comprehend
+              pointers back then. Fortunately, I sticked with programming ever
+              since, dabbled in a lot of programming languages and frameworks,
+              but ultimately settled and honed my skills in web development with
+              React and Javascript.
+            </p>
+          </div>
+
           <a
             href="mailto:matthewlemuelr@gmail.com"
             className={buttonVariants({
@@ -81,9 +84,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-4">
+      <section className="flex flex-col gap-4 sm:gap-8">
         <h2 className="text-3xl font-semibold">My Skills</h2>
-        <div className="flex flex-wrap max-w-4xl gap-8 mt-4">
+        <div className="flex flex-wrap max-w-4xl gap-4">
           <div className="flex gap-2 items-center">
             <Icons.react className="w-12 h-12" />
             <h6 className="font-bold">React</h6>
@@ -123,11 +126,11 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2 className="text-3xl font-semibold mb-4 sm:mb-10">My Projects</h2>
+        <h2 className="text-3xl font-semibold mb-4 sm:mb-8">My Projects</h2>
         <ProjectGrid />
       </section>
       <section>
-        <h2 className="text-3xl font-semibold mb-4 sm:mb-10">My Experience</h2>
+        <h2 className="text-3xl font-semibold mb-4 sm:mb-8">My Experience</h2>
         <Timeline />
       </section>
     </main>

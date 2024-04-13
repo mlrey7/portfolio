@@ -24,7 +24,7 @@ const tags = [
 
 const Page = () => {
   return (
-    <main className="flex min-h-screen container flex-col py-24 md:pt-36 lg:px-36 gap-24">
+    <main className="flex min-h-screen container flex-col py-24 md:pt-36 lg:px-36">
       <section className="flex flex-col gap-16">
         <div className="flex flex-col gap-8">
           <div className="flex justify-between">
@@ -81,7 +81,7 @@ const Page = () => {
           className="h-auto w-full object-cover rounded"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 80vw"
         />
-        <article className="flex flex-col gap-24 mt-8">
+        <article className="flex flex-col gap-16">
           <div className="flex flex-col">
             <h2 className="animate-fade-in text-2xl font-bold">
               Project Goals

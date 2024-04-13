@@ -30,10 +30,10 @@ const ProjectContent = ({
         </div>
       </Link>
 
-      <div className="mt-6 flex flex-col gap-4">
+      <div className="mt-6 flex flex-col gap-2">
         <h2 className="text-2xl font-semibold">{title}</h2>
         <p className="w-3/4 text-slate-500">{description}</p>
-        <div>
+        <div className="mt-4">
           <Link
             href={link}
             className={cn(
