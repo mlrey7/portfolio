@@ -18,7 +18,7 @@ export default function Home() {
             Hello there, I{"'"}m Matthew Lemuel Rey. <br />
             Aspiring <AnimatedHeader />,
             <br />
-            and Graduating Student.
+            and CS Graduate.
           </h1>
           <Image
             src={"/avatar2.jpg"}
@@ -32,8 +32,8 @@ export default function Home() {
         <div className="max-w-prose flex flex-col gap-4 mt-8 text-slate-500">
           <div>
             <p>
-              I{"'"}m a 22-year-old graduating student at University of the
-              Philippines Diliman studying Computer Science.
+              I{"'"}m a 22-year-old fresh Computer Science graduate from the
+              University of the Philippines Diliman.
             </p>
             <p className="mt-2">
               I started dabbling in coding when I was 11 in order to make games

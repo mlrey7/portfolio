@@ -35,13 +35,6 @@ const Page = () => {
               See in github
               <FontAwesomeIcon icon={faGithub} className="w-6 h-6 ml-1" />
             </Link>
-            <Link
-              href={"https://reddit-clone-vert-ten.vercel.app/"}
-              className={cn(buttonVariants(), "items-center")}
-            >
-              See live
-              <ExternalLink className="w-6 h-6 ml-1" />
-            </Link>
           </div>
         </div>
         <Image
